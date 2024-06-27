@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Global Client Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333333;
+        }
+        header {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        .logo {
+            max-width: 200px;
+            height: 50px;
+            background-color: #ffffff;
+            margin: 0 auto;
+        }
+        .search-bar {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .search-bar input {
+            width: 50%;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .grid-item {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+        .grid-item img {
+            max-width: 100%;
+            height: auto;
+        }
+        .caption {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .description {
+            margin-top: 5px;
+            font-size: 14px;
+        }
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 480px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+            .search-bar input {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Just Global Logo</div>
+        <h1>Client Showcase</h1>
+    </header>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Search creatives...">
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="https://via.placeholder.com/350x250.png?text=Creative+1" alt="Creative 1">
+            <div class="caption">Summer Campaign</div>
+            <div class="description">Beachside product showcase for new sunscreen line.</div>
+        </div>
+        <div class="grid-item">
+            <img src="https://via.placeholder.com/350x250.png?text=Creative+2" alt="Creative 2">
+            <div class="caption">Tech Innovation</div>
+            <div class="description">Futuristic ad for latest smartphone release.</div>
+        </div>
+        <div class="grid-item">
+            <img src="https://via.placeholder.com/350x250.png?text=Creative+3" alt="Creative 3">
+            <div class="caption">Eco-Friendly Initiative</div>
+            <div class="description">Green energy promotion for sustainable living.</div>
+        </div>
+        <div class="grid-item">
+            <img src="https://via.placeholder.com/350x250.png?text=Creative+4" alt="Creative 4">
+            <div class="caption">Fitness Challenge</div>
+            <div class="description">30-day workout program advertisement.</div>
+        </div>
+        <div class="grid-item">
+            <img src="https://via.placeholder.com/350x250.png?text=Creative+5" alt="Creative 5">
+            <div class="caption">Gourmet Delights</div>
+            <div class="description">Luxury food delivery service campaign.</div>
+        </div>
+        <div class="grid-item">
+            <img src="https://via.placeholder.com/350x250.png?text=Creative+6" alt="Creative 6">
+            <div class="caption">Travel Adventure</div>
+            <div class="description">Exotic vacation package promotional material.</div>
+        </div>
+        <!-- Add 6 more grid-items to reach the total of 12 -->
+    </div>
+
+    <script>
+        // Placeholder for search functionality
+        document.querySelector('.search-bar input').addEventListener('keyup', function(e) {
+            // Implement search logic here
+            console.log('Searching for:', e.target.value);
+        });
+    </script>
+</body>
+</html>
